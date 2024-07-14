@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="container">
+            <div class="logo">Hushh Browser Companion</div>
+
+            <!-- Signup Page -->
+            <div id="signup-box" class="box">
+                <h2>Signup</h2>
+                <form id="signup-form">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username here">
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="Enter your email here">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Create password">
+                            <img src="eye.png" id="togglePassword" class="toggle-password">
+                        </div>
+                        <div id="password-criteria" class="password-criteria">
+                            <p class="length">At least 4 characters</p>
+                            <p class="lowercase">At least 1 lowercase letter</p>
+                            <p class="uppercase">At least 1 uppercase letter</p>
+                            <p class="number">At least 1 number</p>
+                            <p class="special">At least 1 special character</p>
+                        </div>
+                    </div>
+                    <button type="submit">Signup</button>
+                    <p class="login-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+                </form>
+            </div>
+
+            <!-- Login Page -->
+            <div id="login-box" class="box" style="display: none;">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="login-username">Username</label>
+                        <input type="text" id="login-username" name="username" placeholder="Enter your username here">
+                    </div>
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email here">
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="login-password" name="password" placeholder="Enter your password here">
+                            <img src="eyeslash.png" id="toggleLoginPassword" class="toggle-password">
+                        </div>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p class="signup-link">Don't have an account? <a href="#" id="show-signup">Signup</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

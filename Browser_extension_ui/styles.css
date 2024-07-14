@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #400270 0%, #ba1000c6 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.popup-container {
+    width: 450px; /* Set your desired width here */
+    height: 500px; /* Set your desired height here */
+    overflow: auto; /* Ensure scrollability if content overflows */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    align-self: top;
+    padding-left: 20px;
+}
+
+.box {
+    background: rgba(77, 77, 77, 0.566);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 21px);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background:linear-gradient(135deg, #7a05ff 0%, #ba6300c0 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f5008f;
+}
+
+.login-link, .signup-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a, .signup-link a {
+    color: #9400d3;
+}
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    cursor: pointer;
+    width: 22px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+.password-criteria {
+    display: none;
+    color: darkgrey;
+    font-size: 12px;
+}
+
+.password-criteria p {
+    margin: 5px 0;
+}

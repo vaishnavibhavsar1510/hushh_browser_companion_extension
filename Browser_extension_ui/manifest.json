@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Hushh Browser Companion",
+    "version": "1.0.0",
+    "description": "A simple browser extension for signup and login.",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "images/image.png"
+      }
+       
+    },
+    "permissions": []
+  }
+  
