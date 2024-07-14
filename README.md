@@ -1,47 +1,46 @@
 # hushh_browser_companion_extension
 
-Product Comparison Script (Amazon vs Flipkart)
+**Product Comparison Script (Amazon vs Flipkart)**
 This Python script uses Selenium to compare product details between Amazon and Flipkart.
 
-Requirements
-Python 3.x
-Selenium
-Webdriver Manager
-Tabulate
+**Requirements**
+  -Python 3.x
+  -Selenium
+  -Webdriver Manager
+  -Tabulate
 Install dependencies using pip:
 
-Copy code
-pip install selenium webdriver-manager tabulate
-Usage
-Clone the repository:
+for example Copy code-
+**pip install selenium webdriver-manager tabulate**
 
-bash
-Copy code
-git clone https://github.com/your_username/product-comparison.git
-cd product-comparison
-Run the script:
 
-bash
-Copy code
-python compare_products.py
-Input URLs:
+**Usage**
+1. Clone the repository:
+    Copy code-
+    git clone https://github.com/your_username/product-comparison.git
+    cd product
 
-Enter the URLs of the Amazon and Flipkart products when prompted.
+2. Run the script:    
+    In terminal Copy code-
+    python streamlit recorder.py
 
-View Comparison:
+3. Input URLs:
+   Enter the URLs of the Amazon and Flipkart products when prompted.
 
-The script will open the URLs, extract product details (title, ratings, reviews, price), and display them in a comparison table.
+4. View Comparison:
+   The script will open the URLs, extract product details (title, ratings, reviews, price), and display them in a comparison table.
 
-Close the WebDriver:
+5. Close the WebDriver:
+   Ensure to close the WebDriver window after the comparison is complete.
 
-Ensure to close the WebDriver window after the comparison is complete.
+**Script Details**
+   **->Amazon:** Extracts product details including title, ratings, reviews, and price.
+   **->Flipkart**: Opens the product page in a new tab, extracts similar details, and compares them with Amazon.
 
-Script Details
-Amazon: Extracts product details including title, ratings, reviews, and price.
-Flipkart: Opens the product page in a new tab, extracts similar details, and compares them with Amazon.
-Notes
-Make sure to have an active internet connection as the script relies on live data from Amazon and Flipkart.
-Adjust the script if there are changes in the website structure (e.g., element IDs, class names) of Amazon or Flipkart.
-Contributing
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+**Notes**
+   -Make sure to have an active internet connection as the script relies on live data from Amazon and Flipkart.
+   -Adjust the script if there are changes in the website structure (e.g., element IDs, class names) of Amazon or Flipkart.
+
+**Contributing**
+   -Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
